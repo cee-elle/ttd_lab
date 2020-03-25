@@ -1,0 +1,14 @@
+{
+  "name": "wk11-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "addFormula.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Cindy Le",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
+}
