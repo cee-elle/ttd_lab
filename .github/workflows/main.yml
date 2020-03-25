@@ -1,0 +1,29 @@
+name: CI testing
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: use node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: "12.x" 
+    
+    - name: npm install, and test
+      run: |
+        npm install
+        npm test
+    
+    - name: ESLint Action
+      uses: hallee/eslint-action@1.0.1
+
