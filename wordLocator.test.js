@@ -35,4 +35,4 @@ describe("Word locator function", () => {
         const output = ["cat", "dog", "fish", "monkey", "hamster", "dinosaur"];
         expect(()=>{wordLocator(input, "e")}).toThrowError("input is empty");
     });
-})
+});;
